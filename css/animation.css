@@ -1,0 +1,14 @@
+@keyframes banner {
+    0%{
+        background: url("https://i.pinimg.com/originals/cc/46/7c/cc467cf65900638cd03fb231ca4bf988.jpg");
+        background-size: cover;
+    }
+    50%{
+        background: url("https://previews.123rf.com/images/joyfuldesigns/joyfuldesigns1307/joyfuldesigns130700006/21014012-este-moderno-cuarto-de-ba%C3%B1o-con-ducha-de-vidrio-transparente-con-caja-de-m%C3%A1rmol-y-una-ba%C3%B1era-bastant.jpg");
+        background-size: cover;
+    }
+    100%{
+        background: url("https://i.pinimg.com/474x/88/93/aa/8893aa711a67e7a8d669c7a8cc6061f5.jpg");
+        background-size: cover;
+    }
+}

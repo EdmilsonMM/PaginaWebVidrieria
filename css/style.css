@@ -1,0 +1,432 @@
+.pagina{
+    width: 100%;
+    background: rgb(247, 247, 247);
+}
+/*barra de navegacion*/
+.header{
+    width: 100%;
+    height: 65px;
+}
+.contenedor__barra{
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    padding: 0 5em 0 5em;
+    background: white;
+    z-index: 1;
+
+}
+
+.contenedor__barra.barra2{
+    box-shadow: 0 0 10px grey;
+}
+
+.titulo{
+    float: left;
+    line-height: 65px;
+}
+.titulo span{
+    color: rgb(83, 122, 236);
+}
+
+.menu {
+    float: right;
+    line-height:65px;
+    /*background: orange;*/
+}
+
+.menu a i{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu a{
+    display: block;
+    padding: 0 20px 0 20px;
+    text-decoration: none;
+    transition: all .4s ease;
+    color: black;
+}
+.menu a:hover{
+    background: rgb(83, 122, 236);
+}
+.menu .submenu{
+    background: white;
+    display: none;
+}
+
+.menu .submenu li {
+    line-height: 65px;
+}
+
+
+.menu ul li a:hover+ul,.menu .submenu:hover{
+    display: block;
+}
+/*TODO referente al icono del menu*/
+/*ico*/
+
+/*Desplegar menu con el ico*/
+.menu.menu2 {
+    width: 100%;
+    height: 1005px;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    transform: translateX(0);
+    transition: all .5s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*portada*/
+
+.portada{
+    width: 100%;
+    height: 944px;
+    background: url("../img/portada.jpg");
+    background-size: cover;
+    background-position:center;
+    position: relative;
+}
+
+.fondo{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.705);
+
+}
+
+
+
+/*Descripcion de portada*/
+
+.descrip__portada{
+    width: 100%;
+    height: 700px;
+    /*background: blue;*/
+    padding: 0  4em 0 4em;
+    position: absolute;
+    top: 18%;
+    left: 0;
+}
+.bienvenida{
+    width: 800px;
+    /*background: blueviolet;*/
+    padding: 1em;
+    float: left;
+    margin-top: 10%;
+}
+.bienvenida h1{
+    font-size: 80px;
+    color: white;
+   /* background: chartreuse;*/
+}
+
+.bienvenida p{
+    /*background: chocolate;*/
+    font-size: 30px;
+    color: white;
+}
+.bienvenida a{
+    text-decoration: none;
+    background: rgb(83, 122, 236);
+    padding: 10px;
+    line-height:80px ;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;    
+}
+
+.bienvenida a:hover{
+    background: white;
+    color: rgb(83, 122, 236);;
+    box-shadow: 0 0 20px blue;
+}
+
+/*
+.banner{
+    width: 300px;
+    height: 500px;
+    background: crimson;
+    float: right;
+    margin-top: 5%;
+    animation: banner 10s infinite;
+}*/
+
+/*Article 1 Quien somos*/
+
+.section1{
+    width: 100%;
+    background: #ffff;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    margin-top: 4em;
+    margin-bottom: 5em;
+}
+.quienes__somos{
+    width: 1300px;
+    /*background: orange;*/
+    margin: auto;
+}
+.tituo_somos{
+    width: 100%;
+    /*background: orchid;*/
+    text-align: center;
+    font-size: 40px;
+    line-height: 90px;
+}
+.content__somos{
+    width: 100%;
+    /*background: chartreuse;*/
+    display: flex;
+    text-align: justify;
+}
+.content__somos p{
+    width: 100%;
+    /*background: red;*/
+    padding: 20px;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.img__somos{
+    width: 1300px;
+    height: 420px;
+    /*background: chocolate;*/
+    padding: 20px 0 20px 0;
+}
+
+.img__somos img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/*PANELES*/
+
+.article2{
+    width: 100%;
+    /*background: cornflowerblue;*/
+}
+.paneles{
+    width: 100%;
+    /*background: cyan;*/
+    margin-bottom: 5em;
+}
+
+.paneles__imagenes{
+    width: 90%;
+    /*background: crimson;*/
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
+
+}
+.seguridad {
+    width: 350px;
+    height: 530px;
+    background: orange;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 0 20px grey;
+    margin: auto;
+    
+}
+
+.seguridad img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.seguridad::before{
+    content: "Vidrios de seguridad";
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(100, 148, 237, 0.747);
+    transform: translateY(-100%);
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    position: absolute;
+    font-size: 30px;
+    color: white;
+}
+.seguridad.accesorios::before{
+    content: "Acessorios";
+    
+}
+.seguridad.contacto::before{
+    content: "Contactenos";
+   
+}
+.seguridad:hover::before{
+    transform: translateY(0);
+}
+
+/*Article 3*/
+
+.ico__datos{
+    width: 90%;
+    padding: 20px 0 20px 0;
+    margin: auto;
+    /*background: blue;*/
+    text-align: center;
+    font-size: 40px;
+}
+.article3{
+    width: 100%;
+    background: #ffff;
+    padding: 5em 0 5em 0;
+}
+.datos{
+    width: 90%;
+    /*background: red;*/
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+}
+.ico{
+    margin: 3em 0 3em 0;
+}
+.ico i{
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+.ico p{
+    font-size: 20px;
+    color: black;
+}
+
+/*ARTICULO 4*/
+
+.article4{
+    width: 100%;
+    height: 600px;
+    background: hotpink;
+}
+
+.contact__titulo{
+    width: 100%;
+    background: rgb(83, 122, 236);
+    text-align: center;
+}
+
+
+.contact__titulo h2{
+    color: white;
+    font-size: 30px;
+}
+
+.contact__titulo p{
+    font-weight: bolder;
+    line-height: 40px;
+    color: white;
+}
+
+.fondo__contacto{
+    width: 100%;
+    background: url("https://ramosiv.es/wp-content/uploads/2014/07/slider_portada02-1000x400.jpg");
+    height: 100%;
+    background-size: cover;
+    padding-top: 5em;
+}
+.formulario__contacto{
+    width: 700px;
+    /*background:yellowgreen;*/
+    padding: 20px;
+    margin: auto;
+}
+.formulario__contacto input[type="text"]{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    margin: 10px 0 10px 0;
+}
+
+.formulario__contacto input[type="text"]::placeholder{
+    font-weight: bolder;
+}
+.formulario__contacto textarea{
+    resize: none;
+    width: 100%;
+    outline: none;
+    padding: 10px;
+}
+.formulario__contacto textarea::placeholder{
+    font-weight: bolder;
+}
+
+.formulario__contacto input[type="submit"]{
+    width: 100%;
+    padding: 10px;
+    background:rgb(83, 122, 236);;
+    border: 1px solid black;
+    font-size: 20px;
+    margin-top: 2em;
+}
+.formulario__contacto input[type="submit"]:hover{
+    box-shadow:0 0 10px rgb(83, 122, 236); ;
+}
+
+#truco{
+    display: none;
+}
+
+
+/*OFRECEMOS*/
+.ofrecemos{
+    width: 100%;
+    background: rgb(83, 122, 236);
+    display: flex;
+    align-items: center;
+    padding: 20px 0 20px 0;
+}
+.text__ofrecemos{
+    width: 100%;
+    /*background: blueviolet;*/
+    padding-left: 2em;
+    font-size: 30px;
+    color: white;
+}
+.iconos__ofrecemos{
+    width: 100%;
+    /*background: brown;*/
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+/*FOOTER*/
+footer{
+    margin-top: 18em;
+    width: 100%;
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
